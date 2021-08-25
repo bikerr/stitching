@@ -1,5 +1,5 @@
 # stitching
-picsew 滚动截屏 图片拼接 长图拼接 智能拼图 stitch opencv python 拼长图 拼接屏 拼聊天记录
+picsew 滚动截屏 图片拼接 长图拼接 智能拼图 stitch opencv python 拼长图  拼截屏 拼聊天记录
 
 ### 效果
 - eg
