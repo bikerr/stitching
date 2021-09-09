@@ -123,6 +123,11 @@ def stitch2(img1, img2, ratio):
     block = sub.shape[0] // ratio
 
     templ = gray1[height - block:height, ]
+
+    if templ.shape[0] < block:
+        print("templ shape is too small", templ.shape)
+        return 0, 1, 0
+
     res = cv2.matchTemplate(gray2, templ, cv2.TM_SQDIFF_NORMED)
     mn_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
     print("thresh, shape ,height, block", thresh, sub.shape, height, block)
